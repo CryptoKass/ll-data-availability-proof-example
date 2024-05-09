@@ -92,6 +92,10 @@ func main() {
 	enc.Encode(proof)
 }
 
+// GetProof –
+// Calls the Celestia Tendermint RPC to get the proof for the data
+// see: QueryShareInclusionProof
+// https://github.com/celestiaorg/celestia-app/blob/e631be307896e7a8311c7e1780744cb4c79b596b/pkg/proof/querier.go#L74
 func GetProof(
 	trpc *http.HTTP,
 	pointer *cscContract.CanonicalStateChainCelestiaPointer,
